@@ -1,0 +1,11 @@
+# llaves y salidas: nunca al repositorio
+.env
+.env.*
+*.zip
+*.plugin
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
+salida/
+salidas/
