@@ -1,7 +1,7 @@
 # smart4ai-plugins · las habilidades de Smart4AI para Claude
 
-Dos plugins con las habilidades del curso **Arquitectos de IA**, listos para instalar en **Claude Cowork** y **Claude Code**,
-con sus conectores declarados. Cada habilidad trabaja con los datos de tu empresa (un perfil que vive en tu Google Drive);
+Dos plugins con las habilidades del curso **Arquitectos de IA**, listos para instalar en **claude.ai**, **Claude Cowork** y
+**Claude Code**, con sus conectores declarados. Cada habilidad trabaja con los datos de tu empresa (un perfil que vive en tu Google Drive);
 Smart4AI viene adentro solo como ejemplo. Nada se envía ni se publica sin tu aprobación.
 
 | Plugin | Habilidades | Conectores |
@@ -11,6 +11,11 @@ Smart4AI viene adentro solo como ejemplo. Nada se envía ni se publica sin tu ap
 
 ## Instalar
 
+**claude.ai y Claude Cowork** (sin instalar nada en el computador): **Configuración → Personalizar → Plugins → Agregar →
+Agregar marketplace → Agregar desde un repositorio**, escribe `santivelezia/smart4ai-plugins`, pulsa **Sincronizar** y, en la
+pestaña **Descubrir**, **Agregar** en el plugin que quieras. En la ficha del plugin, la pestaña **Conectores** muestra cada uno
+con su botón **Conectar**. Como respaldo, cada plugin también se entrega como archivo `.plugin` (**Agregar → Subir plugin**).
+
 **Claude Code** (dos comandos, una sola vez):
 
 ```
@@ -19,19 +24,16 @@ claude plugin install smart4ai-habilidades-1-comercial@smart4ai-plugins
 ```
 (y `smart4ai-habilidades-2-contenido@smart4ai-plugins` para el segundo). Después, `/mcp` para autorizar los conectores.
 
-**Claude Cowork:** agrega este marketplace desde su enlace en la configuración de plugins y pulsa Instalar; los
-conectores se autorizan con un clic cada uno. Como respaldo, cada plugin también se entrega como archivo `.plugin`.
-
-**claude.ai (el chat):** ahí no hay plugins. Cada habilidad se instala por aparte desde su ZIP
-(`Configuración → Personalizar → Habilidades → Agregar → Subir habilidad`). Los ZIP están en las descargas de cada versión.
+**Habilidad por habilidad (sin plugin):** cada una viene también como ZIP en las descargas de cada versión, para
+`Configuración → Personalizar → Habilidades → Agregar → Subir habilidad`.
 
 **Después de instalar, escribe "arranque"** (o "arranque de contenido"): revisa tus conectores, te hace las preguntas de tu
 empresa una sola vez y deja todo listo. La guía paso a paso con capturas está en el curso.
 
 ## Actualizar
 
-`claude plugin update <plugin>@smart4ai-plugins` (Claude Code) o desde Cowork. Las versiones están en el índice y en
-`CHANGELOG.md` de cada habilidad.
+En claude.ai y Cowork, con **Sincronizar automáticamente** encendido, las mejoras llegan solas. En Claude Code:
+`claude plugin update <plugin>@smart4ai-plugins`. Las versiones están en el índice y en el `CHANGELOG.md` de cada habilidad.
 
 ## Licencia
 

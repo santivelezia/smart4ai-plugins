@@ -10,7 +10,7 @@
     {
       "name": "smart4ai-habilidades-1-comercial",
       "description": "Mi voz, el cotizador y el precio con margen, más el arranque que deja todo listo con los datos de tu empresa (perfil en tu Drive). Conectores: Google Drive, Gmail, Google Calendar, Firecrawl.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "business",
       "author": {
         "name": "Smart4AI"
@@ -29,7 +29,7 @@
     {
       "name": "smart4ai-habilidades-2-contenido",
       "description": "El post con la voz de la marca, la imagen del post y el video del post, más el arranque que sube tu marca a Cloudinary y crea el Calendario editorial. Conectores: Cloudinary, Notion, Google Drive, Clipkit, Descript, Hugging Face.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "marketing",
       "author": {
         "name": "Smart4AI"
