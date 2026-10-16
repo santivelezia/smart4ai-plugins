@@ -9,6 +9,10 @@ Smart4AI viene adentro solo como ejemplo. Nada se envía ni se publica sin tu ap
 | [`smart4ai-habilidades-1-comercial`](plugins/smart4ai-habilidades-1-comercial/) | el arranque · mi voz · el cotizador · el precio con margen | Google Drive · Gmail · Google Calendar · Firecrawl |
 | [`smart4ai-habilidades-2-contenido`](plugins/smart4ai-habilidades-2-contenido/) | el arranque de contenido · el post con la voz de la marca · la imagen del post · el video del post | Cloudinary · Notion · Google Drive · Clipkit · Descript · Hugging Face |
 
+Y un plugin aparte, de la Feria Effix:
+
+- [`radar-tienda`](plugins/radar-tienda/) · **Del producto a la tienda**: estudio de mercado de un producto (skill de Carlos Jiménez), imágenes, producto en borrador en tu Shopify, anuncio para Meta revisado y tablero en vivo con recibo de costos; nunca publica. Instálalo en Claude Code con `/plugin marketplace add santivelezia/smart4ai-plugins` y `/plugin install radar-tienda@smart4ai-plugins`.
+
 ## Instalar
 
 **claude.ai y Claude Cowork** (sin instalar nada en el computador): **Configuración → Personalizar → Plugins → Agregar →

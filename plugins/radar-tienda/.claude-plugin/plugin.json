@@ -1,0 +1,71 @@
+{
+  "name": "radar-tienda",
+  "displayName": "Radar a Tienda",
+  "version": "1.0.0",
+  "description": "Del producto a la tienda en minutos. Estudio de mercado de un producto (skill de Carlos Jiménez), validación de promesas y precios, imágenes, producto en borrador en tu Shopify, anuncio para Meta revisado y tablero en vivo con recibo de costos. Nunca publica, nunca crea campañas y todo queda en borrador hasta que tú lo apruebes. Empieza con /radar-tienda:radar-configurar.",
+  "author": {
+    "name": "Smart4AI · Santiago Vélez, con la skill de estudio de mercado de Carlos Jiménez",
+    "email": "santi@smart4ai.io",
+    "url": "https://smart4ai.io"
+  },
+  "homepage": "https://smart4ai.io",
+  "repository": "https://github.com/santivelezia/smart4ai-plugins",
+  "license": "CC-BY-NC-4.0",
+  "keywords": ["shopify", "dropshipping", "estudio-de-mercado", "ecommerce", "contra-entrega", "meta-ads", "colombia", "latam", "smart4ai"],
+  "userConfig": {
+    "pais": {
+      "type": "string",
+      "title": "País de venta",
+      "description": "Código de dos letras del país donde vendes (CO, MX, PE, CL, EC…). Define la moneda y las reglas de precio.",
+      "default": "CO"
+    },
+    "coleccion": {
+      "type": "string",
+      "title": "Colección de Shopify",
+      "description": "Nombre de la colección donde quedan los productos del Radar. Si no existe, la configuración la crea.",
+      "default": "radar"
+    },
+    "vendedor": {
+      "type": "string",
+      "title": "Vendedor (marca) en Shopify",
+      "description": "Lo que aparece en el campo Vendedor del producto.",
+      "default": "Radar"
+    },
+    "etiqueta_prueba": {
+      "type": "string",
+      "title": "Etiqueta de prueba",
+      "description": "Etiqueta que llevan todos los productos creados por el Radar, para encontrarlos o borrarlos juntos.",
+      "default": "radar-prueba"
+    },
+    "codigo_descuento": {
+      "type": "string",
+      "title": "Código de descuento (opcional)",
+      "description": "Si escribes un código, se propone un 10 % desde 2 unidades, solo cuando el margen lo aguanta (25 % o más) y el estudio no dice NO o PRECAUCIÓN. Vacío = nunca se crea.",
+      "default": ""
+    },
+    "pago_contra_entrega": {
+      "type": "boolean",
+      "title": "Mi tienda tiene pago contra entrega activo",
+      "description": "Actívalo solo si en Shopify ya configuraste el pago contra entrega. Si está apagado, la página y el SEO no lo prometen.",
+      "default": false
+    },
+    "proveedor_imagenes": {
+      "type": "string",
+      "title": "Cómo se hacen las imágenes",
+      "description": "conector (una herramienta de imágenes conectada a Claude), openrouter (Gemini con tu clave de OpenRouter) o mis-fotos (solo tus fotos).",
+      "default": "conector"
+    },
+    "carpeta_corridas": {
+      "type": "string",
+      "title": "Carpeta de las corridas",
+      "description": "Dónde se guarda cada corrida (estudio, brief, imágenes, tablero). Nunca dentro del plugin.",
+      "default": "~/radar-tienda/corridas"
+    },
+    "titulo_tablero": {
+      "type": "string",
+      "title": "Título del tablero",
+      "description": "La marca que se ve arriba del tablero en vivo.",
+      "default": "Radar a Tienda"
+    }
+  }
+}
