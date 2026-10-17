@@ -49,7 +49,7 @@
     {
       "name": "radar-tienda",
       "description": "Del producto a la tienda en minutos. Estudio de mercado de un producto (skill de Carlos Jiménez), validación de promesas y precios, imágenes, producto en borrador en tu Shopify, anuncio para Meta revisado y tablero en vivo con recibo de costos. Nunca publica ni crea campañas: todo queda en borrador hasta que lo apruebes.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "business",
       "author": {
         "name": "Smart4AI · Santiago Vélez y Carlos Jiménez"

@@ -126,7 +126,7 @@ class Servidor(unittest.TestCase):
         self.assertEqual(c, 200)
         self.assertIn("Radar a Tienda", html)
         self.assertIn("<svg", html)  # QR del público embebido
-        self.assertIn("https://smart4ai.io/radar-cola", html)
+        self.assertIn("https://smart4ai.io/radar-tienda", html)
         self.assertNotIn("<!--QR_PUBLICO-->", html)
         c, t = self.get("/api/estado")
         j = json.loads(t)

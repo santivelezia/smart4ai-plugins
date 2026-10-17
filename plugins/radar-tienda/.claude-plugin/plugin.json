@@ -1,7 +1,7 @@
 {
   "name": "radar-tienda",
   "displayName": "Radar a Tienda",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Del producto a la tienda en minutos. Estudio de mercado de un producto (skill de Carlos Jiménez), validación de promesas y precios, imágenes, producto en borrador en tu Shopify, anuncio para Meta revisado, tablero en vivo con recibo de costos y Cabina Radar (página con botones y modo proyector). Nunca publica, nunca crea campañas y todo queda en borrador hasta que tú lo apruebes. Empieza con /radar-tienda:radar-configurar.",
   "author": {
     "name": "Smart4AI · Santiago Vélez, con la skill de estudio de mercado de Carlos Jiménez",

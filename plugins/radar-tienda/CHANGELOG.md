@@ -1,5 +1,9 @@
 # CHANGELOG · radar-tienda
 
+## 1.1.1 · 2026-10-16
+
+- Cabina: el QR de la pantalla lleva a `smart4ai.io/radar-tienda` (el regalo del plugin) en vez de `/radar-cola`; texto «Llévate el plugin gratis: escanea el QR». La cola pública por ntfy sigue funcionando para quien tenga el enlace de `/radar-cola`.
+
 ## 1.1.0 · 2026-10-16
 
 **Cabina Radar** (nuevo): `/radar-tienda:radar-cabina` abre una página local (`http://127.0.0.1:8765`, o el siguiente puerto libre) con botones para operar la línea en vivo sin escribir en el chat. La página es el mesero y Claude el cocinero: cada botón escribe una orden en `~/radar-tienda/cabina/orden.json`; Claude, en la misma sesión y con los conectores de siempre, la toma con `esperar_orden.py`, la ejecuta y vuelve a esperar.

@@ -50,7 +50,7 @@ MAX_ENLACE = 500
 MAX_NOMBRE = 80
 TEMA_PUBLICO = "radar-effix-cola-k7m3q9"
 URL_PUBLICO = "https://ntfy.sh/%s/json?poll=1&since=%s"
-URL_QR_PUBLICO = "https://smart4ai.io/radar-cola"
+URL_QR_PUBLICO = "https://smart4ai.io/radar-tienda"
 CADA_PUBLICO_S = 5
 HORAS_NOCHE = 12          # «esta noche» = últimas 12 horas
 # Dominios reservados para pruebas (RFC 2606): nunca entran a la cola pública
