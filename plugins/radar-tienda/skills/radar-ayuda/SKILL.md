@@ -26,6 +26,7 @@ Respondes dudas con el manual del plugin, como un profesor paciente: primero la 
 - **Dónde quedan los archivos:** cada corrida en `~/radar-tienda/corridas/AAAA-MM-DD_HHMM_<producto>/` (estudio, brief, `validacion.md`, `shopify_payload.json`, `shopify_import.csv`, imágenes, `anuncio-meta.md`, `tablero.html`, `recibo.md`). La configuración en `~/.radar-tienda/config.json`.
 - **Costo:** el estudio y la tienda usan tu plan de Claude. Las imágenes con OpenRouter cuestan unos 0,03 dólares (Lite) o 0,14 dólares (Pro) cada una, cobrados en tu cuenta de OpenRouter; el recibo de cada corrida dice el total.
 - **Siempre en borrador:** el plugin nunca publica productos ni crea campañas; tú decides cuándo salen al público.
+- **Cabina Radar** (`/radar-tienda:radar-cabina`, solo Claude Code): página local con botones (`http://127.0.0.1:8765` o el siguiente puerto). Tecla P = modo proyector. "Claude no está escuchando" → pídele que vuelva a esperar órdenes. "Claude trabajando" sin que trabaje → botón destrabar. "Cola pública sin conexión" → la cola local sigue igual. Archivos en `~/radar-tienda/cabina/`. Para cerrarla: "cierra la cabina".
 - **Pago contra entrega:** solo aparece si lo activaste en la configuración (y en Shopify: Configuración → Pagos → Métodos de pago manuales).
 
 ## Soporte

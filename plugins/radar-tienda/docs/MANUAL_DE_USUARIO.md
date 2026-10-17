@@ -229,6 +229,16 @@ En claude.ai o Cowork, di: "compara estos productos" y pasa las fotos o los enla
 
 Acepta de **2 a 4 productos**. Hace un estudio exprés de cada uno, **en paralelo**, los pone lado a lado en una tabla y te dice **cuál lanzar primero** y por qué. La regla es fija: primero el veredicto, luego la confianza, luego el margen. Si todos salen NO RECOMENDABLE, la respuesta honesta es "ninguno por ahora". **Tarda unos 5 a 10 minutos en total.** Al final te ofrece montar el ganador en tu tienda, reutilizando su estudio. La comparación no necesita Shopify. [capturar pantalla: tabla de comparación]
 
+### 7b · Cabina Radar: operar con botones (solo Claude Code, nivel Completo)
+
+Para una demo o para trabajar varios productos seguidos sin escribir en el chat, escribe `/radar-tienda:radar-cabina` (o di "abre la cabina"). Se abre en tu navegador una página local (`http://127.0.0.1:8765`) con tres zonas:
+
+1. **Entrada:** pega el enlace (o el nombre) del producto y pulsa **Lanzar exprés** o **Completo**, o agrégalo a la cola. La cola muestra de dónde vino cada producto (local o público, si alguien lo mandó con el QR) y tiene **Comparar los 3 primeros**.
+2. **Tablero en vivo:** las 5 estaciones, el ángulo de venta, los dolores, las imágenes, la bitácora y los productos analizados esta noche con su tiempo.
+3. **Resultado:** veredicto, margen, combos, enlace y QR de la vista previa en Shopify, extracto del anuncio y el botón **Publicar** (Claude te pide el sí en el chat antes de tocar la tienda).
+
+La tecla **P** activa el **modo proyector** (fondo negro, letra grande y el veredicto a pantalla completa con un sonido corto). Claude se queda "escuchando": la página dice en todo momento si está escuchando o trabajando. Para cerrarla, dile "cierra la cabina". Si Claude se cortó a mitad, el botón **destrabar** libera la página (no toca tu tienda). Todo queda en `~/radar-tienda/cabina/`.
+
 ---
 
 ## 8 · Publicar la tienda (lo haces tú, en Shopify)

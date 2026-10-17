@@ -1,5 +1,14 @@
 # CHANGELOG · radar-tienda
 
+## 1.1.0 · 2026-10-16
+
+**Cabina Radar** (nuevo): `/radar-tienda:radar-cabina` abre una página local (`http://127.0.0.1:8765`, o el siguiente puerto libre) con botones para operar la línea en vivo sin escribir en el chat. La página es el mesero y Claude el cocinero: cada botón escribe una orden en `~/radar-tienda/cabina/orden.json`; Claude, en la misma sesión y con los conectores de siempre, la toma con `esperar_orden.py`, la ejecuta y vuelve a esperar.
+- `scripts/cabina/servidor.py`: servidor solo con la librería estándar, solo en 127.0.0.1. Cola local (máx. 30, sin duplicados), lanzar exprés o completo, comparar los 3 primeros, pedir publicar (Claude pide el sí en el chat), quitar, destrabar. Cola pública opcional por ntfy.sh (tema `radar-effix-cola-k7m3q9`): solo mensajes nuevos desde el arranque, extrae el primer enlace de un texto, descarta dominios y mensajes de prueba. Sin internet, sigue con la cola local. Rechaza POST de otros orígenes y lo que no sea JSON.
+- `scripts/cabina/esperar_orden.py`: espera la orden (tope 1.500 s, sale con `SIN_ORDEN`), la marca en curso, y con `--terminar` la registra en el historial con su tiempo y veredicto.
+- `scripts/cabina/cabina.html`: tres zonas (Entrada · Tablero en vivo · Resultado), las 5 estaciones con el mismo estilo del tablero, contador de productos de la noche con el tiempo de cada uno, QR del público a `smart4ai.io/radar-cola`, QR de la vista previa de Shopify, extracto del anuncio, **modo proyector** (tecla P: fondo negro, letra grande, veredicto a pantalla completa con animación y sonido generado con WebAudio; tecla V repite la celebración).
+- `scripts/cabina/pruebas_cabina.py`: 14 pruebas (parser de la cola pública, servidor real en puerto de prueba, flujo pedido → orden → espera → terminar → contador, publicar, comparar, tope, entradas raras, puerto ocupado).
+- Arreglo encontrado por las pruebas: en Windows, `ThreadingHTTPServer` deja que dos servidores tomen el mismo puerto; la cabina apaga `allow_reuse_address` para que salte al siguiente libre.
+
 ## 1.0.0 · 2026-10-16
 
 Primera versión como plugin portable (Windows y Mac), a partir de la automatización de la hackatón Feria Effix.
