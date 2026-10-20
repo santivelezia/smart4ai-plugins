@@ -1,51 +1,12 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "smart4ai-plugins",
-  "description": "Habilidades de Smart4AI para Claude: las del curso Arquitectos de IA, listas para instalar en Cowork y Claude Code, con sus conectores.",
+  "description": "Plugins de Smart4AI para Claude Cowork y Claude Code. Las habilidades del curso Arquitectos de IA se entregan dentro de la comunidad de alumnos.",
   "owner": {
     "name": "Smart4AI · Santiago Vélez",
     "email": "santi@smart4ai.io"
   },
   "plugins": [
-    {
-      "name": "smart4ai-habilidades-1-comercial",
-      "description": "Mi voz, el cotizador y el precio con margen, más el arranque que deja todo listo con los datos de tu empresa (perfil en tu Drive). Conectores: Google Drive, Gmail, Google Calendar, Firecrawl.",
-      "version": "1.0.2",
-      "category": "business",
-      "author": {
-        "name": "Smart4AI"
-      },
-      "source": "./plugins/smart4ai-habilidades-1-comercial",
-      "keywords": [
-        "cotizacion",
-        "propuesta",
-        "precio",
-        "margen",
-        "voz",
-        "smart4ai",
-        "arquitectos-de-ia"
-      ]
-    },
-    {
-      "name": "smart4ai-habilidades-2-contenido",
-      "description": "El post con la voz de la marca, la imagen del post y el video del post, más el arranque que sube tu marca a Cloudinary y crea el Calendario editorial. Conectores: Cloudinary, Notion, Google Drive, Clipkit, Descript, Hugging Face.",
-      "version": "1.0.2",
-      "category": "marketing",
-      "author": {
-        "name": "Smart4AI"
-      },
-      "source": "./plugins/smart4ai-habilidades-2-contenido",
-      "keywords": [
-        "post",
-        "redes",
-        "imagen",
-        "video",
-        "cloudinary",
-        "notion",
-        "smart4ai",
-        "arquitectos-de-ia"
-      ]
-    },
     {
       "name": "radar-tienda",
       "description": "Del producto a la tienda en minutos. Estudio de mercado de un producto (skill de Carlos Jiménez), validación de promesas y precios, imágenes, producto en borrador en tu Shopify, anuncio para Meta revisado y tablero en vivo con recibo de costos. Nunca publica ni crea campañas: todo queda en borrador hasta que lo apruebes.",

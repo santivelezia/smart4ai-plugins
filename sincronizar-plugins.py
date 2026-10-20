@@ -15,10 +15,10 @@ import os, shutil, sys, json, argparse
 sys.stdout.reconfigure(encoding="utf-8")
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FUENTE = os.path.join(os.path.dirname(AQUI), "top5-demo-skill")
-PLUGINS = {
-    "smart4ai-habilidades-1-comercial": ["arranque-comercial", "mi-voz", "cotizador", "precio-con-margen"],
-    "smart4ai-habilidades-2-contenido": ["arranque-contenido", "post-voz-marca", "imagen-post", "video-post"],
-}
+# 2026-10-20 (decisión de Santiago): los dos plugins de las habilidades del curso SALIERON de este repo público;
+# se entregan dentro de WeMany a los alumnos. No volver a sincronizarlos aquí. Paquete exclusivo:
+# proyectos/Embajador-Claude/exclusivo-alumnos/2026-10-20_habilidades-del-curso/
+PLUGINS = {}
 # Plugins que se copian completos (carpeta entera) desde otro proyecto; solo con --solo <nombre>
 PLUGINS_COMPLETOS = {
     "radar-tienda": os.path.join(os.path.dirname(os.path.dirname(AQUI)), "Feria-Effix", "plugin", "radar-tienda"),
